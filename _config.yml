@@ -1,3 +1,10 @@
 name: Your New Jekyll Site
 markdown: redcarpet
+safe: false
 pygments: true
+gems: [jekyll-assets]
+assets:
+  compress:
+    css:  sass
+    js:   uglifier
+exclude: [vendor, Gemfile, Gemfile.lock, Procfile]
